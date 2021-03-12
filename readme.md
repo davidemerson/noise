@@ -37,3 +37,16 @@ passwd
 - then update the distro
 ```
 sudo apt update && sudo apt upgrade -y
+```
+- install git
+```
+sudo apt install git
+```
+- install the enviromini hat drivers
+```
+curl -sSL https://get.pimoroni.com/enviroplus | bash
+```
+
+## Other Resources
+Pimoroni keeps good docs here: https://github.com/pimoroni/enviroplus-python
+The exporter I used is from here: https://github.com/tijmenvandenbrink/enviroplus_exporter
