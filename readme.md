@@ -38,14 +38,22 @@ passwd
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-- install git
+- install git screen
 ```
 sudo apt install git
 ```
 - install the enviromini hat drivers
 ```
-curl -sSL https://get.pimoroni.com/enviroplus | bash
+git clone https://github.com/pimoroni/enviroplus-python
+cd enviroplus-python
+sudo ./install.sh
 ```
+- clone this repo to the pi and run noisemon
+```
+git clone https://github.com/davidemerson/noisemon.git
+python3 noisemon/noisemon.py
+```
+(you might want to run it in screen if you don't want to stay attached.)
 
 ## Other Resources
 Pimoroni keeps good docs here: https://github.com/pimoroni/enviroplus-python
